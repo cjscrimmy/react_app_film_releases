@@ -5,7 +5,7 @@ class Film extends Component{
     render(){
         return(
             <li className="film">
-                i am a film
+                <p>{this.props.name}</p>
             </li>
         )
     }
