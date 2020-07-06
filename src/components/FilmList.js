@@ -5,7 +5,7 @@ class FilmList extends Component {
     render(){
         const filmNodes = this.props.films.map(film => {
             return(
-                <Film name={film.name} key={film.id}>
+                <Film name={film.name} key={film.id} url={film.url}>
                     {film.text}
                 </Film>
             );
@@ -14,6 +14,7 @@ class FilmList extends Component {
         return(
             <ul className="film-list">
                 {filmNodes}
+                
             </ul>
         );
     }
