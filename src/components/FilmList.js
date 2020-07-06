@@ -15,6 +15,12 @@ class FilmList extends Component {
             <ul className="film-list">
                 {filmNodes}
                 
+                <a href="https://www.imdb.com/calendar/?region=gb"> 
+                   <button>
+                       View More Up and Coming Releases
+                   </button> 
+                </a> 
+        
             </ul>
         );
     }
